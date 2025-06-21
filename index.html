@@ -89,6 +89,7 @@
       0%, 100% {opacity: 1;}
       50% {opacity: 0.7;}
     }
+
     .section-transition {
       animation: fadeIn 1.3s ease forwards;
       opacity: 0;
@@ -234,6 +235,15 @@
     form.glass {
       max-width: 36rem; /* slightly bigger */
     }
+    .red-glow {
+  	  box-shadow:
+      	  0 0 18px #ff0000,
+      	  inset 0 0 24px #ff0000;
+    }
+    .red-glow h4 {
+  	  color: #ff4d4d;
+	  text-shadow: 0 0 12px #ff1a1a;
+  	}
   </style>
 </head>
 <body>
@@ -277,19 +287,28 @@
     <div class="grid-cards">
       <div class="card">
         <h4>OMHROS</h4>
-        <p>Leader and strategist, master of warfare and tactics hindered by military.</p>
+        <p>Leader and strategist, he is the guy calling the shots.</p>
       </div>
       <div class="card">
         <h4>Adam</h4>
-        <p>Leader of the clan</p>
+        <p>Advisor of the clan, pretty chill.</p>
       </div>
       <div class="card">
         <h4>Peanut</h4>
-        <p>Peanut</p>
+        <p>Discord administrator, he does his job pretty good</p>
       </div>
       <div class="card">
         <h4>BMW</h4>
-        <p>Recruiter and active player.</p>
+        <p>Recruiter and active player and the quick designer of this website, the name makes sense.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="roster" class="section-transition">
+    <div class="grid-cards">
+      <div class="card">
+        <h4>Zargia</h4>
+        <p>OG bossman, probably a mafia member.</p>
       </div>
     </div>
   </section>
@@ -297,9 +316,9 @@
   <section id="banned" class="section-transition">
     <h3 class="text-center mb-8 glow-text">Banned Members</h3>
     <div class="grid-cards">
-      <div class="card">
+      <div class="card red-glow">
         <h4>Niko</h4>
-        <p>Tryed to undermine the clan and is a big traitor.</p>
+        <p>Tryed to sneak in and flip sides, nah bro, get rekt.</p>
       </div>
     </div>
   </section>
@@ -406,4 +425,3 @@
 
 </body>
 </html>
-
